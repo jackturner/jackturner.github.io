@@ -1,0 +1,215 @@
+* {
+    margin:             0;
+    padding:            0;
+    -moz-box-sizing:    border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing:         border-box; 
+    }
+
+body {
+    margin:             0 0 50px;
+    background:         #99C9DD url(images/background.jpg) 50% 0 repeat;
+    font-family:        "MyriadPro-Regular", "Myriad Pro Regular", MyriadPro, "Myriad Pro", 'Trebuchet MS', Arial, sans-serif;
+    font-size:          14px;
+    }
+
+a {
+    outline:            none;
+    color:              #004B66;
+    text-decoration:    none;
+    }
+
+a:hover {
+    text-decoration:    underline;
+    }
+    
+img {
+    border:             none;
+    }
+
+p {
+    margin-bottom:      1em;
+    }
+
+#page {
+    background:         transparent url(images/gradient.jpg) 50% 0% no-repeat;
+    }
+
+header {
+    max-width:          980px;
+    min-width:          735px;
+    margin:             0 auto;
+    }
+    
+#logo {
+    display:            block;
+    width:              333px;
+    height:             77px;
+    float:              left;
+    margin:             40px 20px;
+    background:         transparent url(images/logo.png) 0 0 no-repeat;
+    }
+
+#logo h1,
+#logo span {
+    display:            none;
+    }
+
+#introduction {
+    clear:              both;
+    padding:            25px 0;
+    background:         transparent url(images/transparent-backgrounds/white-35-percent.png) 0 0 repeat;
+    }
+
+#introduction p {
+    max-width:          680px;
+    margin:             0 auto;
+    color:              #245465;
+    font-size:          28px;
+    text-align:         center;
+    }
+
+#home #content {
+    max-width:          1200px;
+    min-width:          768px;
+    margin:             0 auto;
+    font-size:          0;
+    text-align:         center;
+    }
+
+.project {      
+    display:            inline-block;
+    vertical-align:     top;
+    overflow:           hidden;
+    background:         transparent url(images/transparent-backgrounds/black-7-percent.png) 0 0 repeat;
+    margin:             3.389830508% 0 0 3.389830508%;
+    text-align:         left;
+    }
+
+.project.disabled {
+    opacity:            0.3;
+    }
+
+.project img {
+    width:              100%;
+    vertical-align:     top;
+    }
+
+.project.big {
+    padding-bottom:     8px;
+    width:              28.813559322%;
+    min-height:         348px;
+    font-size:          14px;
+    }
+
+.project.big h2,
+.project.big h3,
+.project.big p {
+    padding:            0 28px;
+    }
+
+.project.big h2 {
+    margin:             16px 0 0;
+    font-weight:        600;
+    font-size:          16px;
+    }
+
+.project.big h3 {
+    margin:             0 0 6px;
+    color:              #0E3132;
+    font-size:          13px;
+    font-weight:        normal;
+    font-style:         italic;
+    }
+
+.project.big p {
+    text-align:         left;
+    margin-bottom:      14px;
+    }
+    
+.project.small {
+    width:              15.93220339%;
+    min-height:         208px;
+    position:           relative;
+    text-align:         left;
+    font-size:          12px;
+    }
+
+.project.small .project_link {
+    display:            block;
+    height:             100px;
+    background-position:50% 0;
+    background-repeat:  no-repeat;
+    text-indent:        -9999px;
+    }
+
+.project.small h2 {
+    font-size:          14px;
+    margin:             8px 8px 0;
+    }
+
+.project.small p {
+    margin:             0 8px 8px;
+    }
+    
+#fernando .project_link {background-image:url(images/projects/small/fernando.jpg)}
+#digifabshop .project_link {background-image:url(images/projects/small/digifabshop.jpg)}
+#mlg .project_link {background-image:url(images/projects/small/mlg.jpg)}
+#scary .project_link {background-image:url(images/projects/small/scary.jpg)}
+#globalscript .project_link {background-image:url(images/projects/small/globalscript.png)}
+#infusystem .project_link {background-image:url(images/projects/small/infusystem.jpg)}
+#mccarty .project_link {background-image:url(images/projects/small/mccarty.jpg)}
+#lewitt .project_link {background-image:url(images/projects/small/lewitt.jpg)}
+#pbbi .project_link {background-image:url(images/projects/small/pbbi.jpg)} 
+#qfc .project_link {background-image:url(images/projects/small/qfc.jpg)} 
+#vascular .project_link {background-image:url(images/projects/small/vascular.jpg)} 
+#holzer .project_link {background-image:url(images/projects/small/holzer.jpg)} 
+#frelinghuysen .project_link {background-image:url(images/projects/small/frelinghuysen.jpg)}
+#browns .project_link {background-image:url(images/projects/small/browns.jpg)}
+
+footer{
+    clear:              both;
+    margin:             50px 0 0;
+    padding:            25px 0;
+    background:         transparent url(../images/transparent-backgrounds/white-24-percent.png) 0 0 repeat;
+    font-family:        Georgia, Times, 'Times New Roman', sans-serif;
+    text-align:         center;
+    min-width:          50em;
+    }
+    
+footer .vcard{
+    display:            inline-block;
+    width:              16em;
+    padding:            0 2em;
+    vertical-align:     middle;
+    text-transform:     lowercase;
+    }
+
+.vcard,
+.vcard .url{
+    color:              #222;
+    }
+
+.hcard-person .adr,
+.hcard-person .org,
+.hcard-person .additional-name,
+.vcard .country-name{
+    display:            none;
+    }
+
+.vcard .n{
+    font-weight:        bold;
+    font-style:         italic;
+    }
+#hcard-jackadam .n{
+    font-size:          18px;
+    }
+
+#hcard-Jack-Traber-Turner{
+    border-right:       1px solid #7CABBB;
+    text-align:         right;
+    }
+#hcard-Adam-Robert-Grossman{
+    border-left:        1px solid #7CABBB;
+    text-align:         left;
+    }
