@@ -1,0 +1,37 @@
+html {
+    font-family:              sans-serif;
+    -ms-text-size-adjust:     80%;
+    -webkit-text-size-adjust: 80%;
+    box-sizing:               border-box;
+    position:                 relative;
+    height:                   100%;
+    }
+
+*, *:before, *:after {
+    box-sizing:         inherit;
+    }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary, small {
+    display:            block;
+    }
+
+body {
+    margin:             120px 0 0;
+    font-family:        "Avenir Next";
+    font-weight:        800;
+    font-style:         italic;
+    background-position:50% 50%;
+    background-size:    cover;
+    background-repeat:  no-repeat;
+    height:             100%;
+    text-align:         center;
+    font-size:          300px;
+    background-color:   #000;
+    color:              #FFF;
+    text-rendering:     optimizeLegibility;
+    overflow:           hidden;
+    }
+
+sup {
+    font-size:          65%;
+    }
