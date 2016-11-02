@@ -7,7 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
 
-
 html {
   	box-sizing: 				border-box;
 		}
@@ -18,47 +17,125 @@ html {
 		padding:						0;
 		}
 
-section {
-		position:  					relative;
-		height:							100vh;
-		}
+body {
+    font-family:        'Helvetica Neue', Helvetica, arial, sans-serif;
+    font-style:         normal;
+    font-weight:        300;
+    font-size:          16px;
+    }
 
-#career {
-		}
+a { 
+    color:              inherit;
+    text-decoration:    inherit;
+    }
 
-#youth {
-		}
-
-.timeline {
+#timeline {
+		position: 					fixed;
 		background: 				rgb(73,155,234);
-		width: 							80px;
-		position:						absolute;
-		left:								120px;
-		}
-
-#career .timeline {
+		width: 							60px;
 		top: 								60px;
-		bottom:							0;
-		border-radius: 			40px 40px 0 0;
+		bottom:							60px;
+		left:								80px;
+		border-radius: 			30px;
 		}
 
-#youth .timeline {
-		top: 								0;
-		bottom:							60px;
-		border-radius: 			0 0 40px 40px;
+#content {
+		margin: 						60px 140px 60px 340px;
+		}
+
+#events .event {
+		margin:							30px 0;
+		line-height:  			1.3;
+		}
+
+#events .event h2 {
+		font-size:					20px;
+		}
+
+#events .event time {
+		font-size:					16px;
+		color: 							#AAA;
 		}
 
 	</style>
 </head>
 <body>
 
-<section id="career">
-	<div class="timeline"></div>
-</section>
+	<div id="timeline"></div>
 
-<section id="youth">
-	<div class="timeline"></div>
-</section>
+	<div id="content">
+
+		<section id="introduction">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<section>				
+		
+		<section id="events">
+
+			<div class="event">
+				<h2>Event Title <time datetime="2016-05-15T19:00">May 15, 2016</time></h2>
+				<p>Description of this event. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+
+			<div class="event">
+				<h2>Event Title <time datetime="2014-05-15T19:00">May 15, 2014</time></h2>
+				<p>Description of this event. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+
+			<div class="event">
+				<h2>Event Title <time datetime="2013-05-15T19:00">May 15, 2013</time></h2>
+				<p>Description of this event. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+
+			<div class="event">
+				<h2>Event Title <time datetime="2010-05-15T19:00">May 15, 2010</time></h2>
+				<p>Description of this event. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+
+			<div class="event">
+				<h2>Event Title <time datetime="2009-05-15T19:00">May 15, 2009</time></h2>
+				<p>Description of this event. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+
+			<div class="event">
+				<h2>Event Title <time datetime="2007-05-15T19:00">May 15, 2007</time></h2>
+				<p>Description of this event. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+
+			<div class="event">
+				<h2>Event Title <time datetime="2006-05-15T19:00">May 15, 2006</time></h2>
+				<p>Description of this event. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+
+			<div class="event">
+				<h2>Event Title <time datetime="2004-05-15T19:00">May 15, 2004</time></h2>
+				<p>Description of this event. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+
+			<div class="event">
+				<h2>Event Title <time datetime="2002-05-15T19:00">May 15, 2002</time></h2>
+				<p>Description of this event. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+
+			<div class="event">
+				<h2>Event Title <time datetime="2001-05-15T19:00">May 15, 2001</time></h2>
+				<p>Description of this event. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+			<div class="event">
+				<h2>First Mac <time datetime="1992-05-15T19:00">May 15, 1992</time></h2>
+				<p>Description of this event. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+			<div class="event">
+				<h2>First Lego Technic kit <time datetime="1988-01-01T19:00">1988</time></h2>
+				<p>Description of this event. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+			<div class="event">
+				<h2>Born <time datetime="1981-08-01T19:00">August 1, 1981</time></h2>
+				<p>Description of this event. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+
+		</section>
+
+	</div>
 
 </body>
 </html>
