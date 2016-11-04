@@ -8,7 +8,9 @@ $(function() {
 			now = moment().unix(),
 			timespan = now - born,
 			has_drawn_cords = false,
-			$cords
+			$cords,
+			cord_width = $cords.width(),
+			handle_distance = cord_width / 2
 
 	$events.each(function() {
 		var m = moment( $(this).find("time").attr("datetime") )
@@ -23,17 +25,20 @@ $(function() {
 		var timeline_top = $timeline.position().top
 
 		$markers.each(function(i, el) {
-			var marker_top = timeline_top + $(this).position().top + 10,
-					event_top = $events.eq(i).offset().top - $(window).scrollTop() + 12
+			var y1 = timeline_top + $(this).position().top + 10,
+					y2 = $events.eq(i).offset().top - $(window).scrollTop() + 12,
+					path_str = 'M0 ' + y1 + ' C ' + handle_distance + ' ' + y1 + ', ' + (cord_width - handle_distance) + ' ' + y2 + ', ' + cord_width + ' ' + y2
 
 			if ( has_drawn_cords )
-				$cords.eq(i).attr({"y1": marker_top, "y2": event_top})
+				$cords.eq(i).attr({"d": path_str})
 			else
-				$cords[0].innerHTML += '<line x1="0" x2="190" y1="'+marker_top+'" y2="'+event_top+'"></line>'
+				// $cords[0].innerHTML += '<line x1="0" x2="190" y1="'+y1+'" y2="'+y2+'"></line>'
+			  $cords[0].innerHTML += '<path d="'+path_str+'" stroke="black" fill="transparent"/>'
+
 		})
 
 		if ( !has_drawn_cords ) {
-			$cords = $cords.find("line")
+			$cords = $cords.find("path")
 			has_drawn_cords = true
 		}
 
