@@ -26,21 +26,21 @@ p + p {
 
 #timeline {
 		position: 					fixed;
-		background: 				rgb(73,155,234);
+		background: 				#DADADA;
 		width: 							60px;
 		top: 								60px;
 		bottom:							60px;
 		left:								80px;
-		border-radius: 			10px;
+		border-radius: 			6px;
 	  overflow: 					hidden;
-	  border-top:					10px solid rgb(73,155,234);
-	  border-bottom:			10px solid rgb(73,155,234);
+	  border-top:					10px solid #DADADA;
+	  border-bottom:			10px solid #DADADA;
 		}
 
 #timeline .marker {
 		position:						absolute;
 		width:  						100%;
-		border-top:					1px solid #000;
+		border-top:					1px solid #666;
 		}
 
 #cords {
@@ -50,6 +50,10 @@ p + p {
 		left: 							140px;
 		width: 							190px;
 		height:							100%;
+		}
+
+#cords line {
+		stroke:							#666;
 		}
 
 #content {

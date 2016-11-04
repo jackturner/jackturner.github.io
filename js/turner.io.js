@@ -1,18 +1,14 @@
-var s = Snap( "#cords" )
-
-// var l = s.line( 0, 100, 200, 215 ).attr( { stroke: 'rgb(0,0,0)', 'stroke-width': 2 } )
-// var l = s.line( 0, 120, 200, 310 ).attr( { stroke: 'rgb(0,0,0)', 'stroke-width': 2 } )
-// var l = s.line( 0, 190, 200, 400 ).attr( { stroke: 'rgb(0,0,0)', 'stroke-width': 2 } )
-
-
 $(function() {
 
-	var $body = $("body"),
+	var $cords = $("#cords"),
+			$body = $("body"),
 			$timeline = $("#timeline"),
 			$events = $("#events .event"),
 			born = moment("1981-08-01T15:00").unix(),
 			now = moment().unix(),
-			timespan = now - born
+			timespan = now - born,
+			has_drawn_cords = false,
+			$cords
 
 	$events.each(function() {
 		var m = moment( $(this).find("time").attr("datetime") )
@@ -23,17 +19,23 @@ $(function() {
 	var $markers = $timeline.children(".marker")
 
 	var draw_lines = function() {
-// console.log($(window).scrollTop())
+
 		var timeline_top = $timeline.position().top
 
-		s.clear()
-
 		$markers.each(function(i, el) {
-			if(i==0) console.log($events.eq(i).scrollTop())
-			var marker_top = timeline_top + $(this).position().top + 10
-			var event_top = $events.eq(i).offset().top + 12 - $(window).scrollTop()
-			var l = s.line( 0, marker_top, 190, event_top ).attr( { stroke: 'rgb(0,0,0)', 'stroke-width': 1 } )
-		})	
+			var marker_top = timeline_top + $(this).position().top + 10,
+					event_top = $events.eq(i).offset().top - $(window).scrollTop() + 12
+
+			if ( has_drawn_cords )
+				$cords.eq(i).attr({"y1": marker_top, "y2": event_top})
+			else
+				$cords[0].innerHTML += '<line x1="0" x2="190" y1="'+marker_top+'" y2="'+event_top+'"></line>'
+		})
+
+		if ( !has_drawn_cords ) {
+			$cords = $cords.find("line")
+			has_drawn_cords = true
+		}
 
 	}
 
