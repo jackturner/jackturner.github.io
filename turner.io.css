@@ -26,15 +26,11 @@ p + p {
 
 #timeline {
 		position: 					fixed;
-		background: 				#DADADA;
-		width: 							60px;
-		top: 								60px;
-		bottom:							60px;
-		left:								80px;
-		border-radius: 			6px;
+		width: 							0;
+		top: 								10px;
+		bottom:							10px;
+		left:								00px;
 	  overflow: 					hidden;
-	  border-top:					10px solid #DADADA;
-	  border-bottom:			10px solid #DADADA;
 		}
 
 #timeline .marker {
@@ -47,8 +43,8 @@ p + p {
 		position:						fixed;
 		top:								0;
 		bottom:  						0;
-		left: 							140px;
-		width: 							190px;
+		left: 							0;
+		width: 							330px;
 		height:							100%;
 		}
 
