@@ -1,0 +1,493 @@
+body{
+    position:           relative;
+    margin:             0;
+    width:              960px;
+    background-color:   #FFF;
+    font-family:        Helvetica, Arial, sans-serif;
+    font-size:          14px;
+    line-height:        16.8px;
+    -webkit-text-size-adjust:none;
+    -webkit-text-stroke:1px transparent;
+    }
+@media only screen and (max-device-width:480px) {
+    body{ -webkit-text-stroke:0 #FFF; }
+    }
+
+
+
+/* GENERAL STYLING */
+a,
+input{
+    outline:            none;
+    }
+
+a{
+    color:              #000;
+    text-decoration:    none;
+    }
+
+a:hover{
+    text-decoration:    underline;
+    }
+
+img{
+    border:             none;
+    }
+
+
+
+/* BLACK & WHITE LOGOS */
+#logo_link{
+    display:            block;
+    position:           absolute;
+    top:                -56px;
+    left:               50px;
+    }
+
+.logo{
+    position:           absolute;
+    top:                0;
+    left:               0;
+    width:              223px;
+    height:             56px;
+    }
+
+#logo_white{
+    display:            block;
+    background-image:   url(../images/logo_white.png);
+    _background-image:  none;
+    filter:             progid:DXImageTransform.Microsoft.AlphaImageLoader(src=../images/logo_white.png,sizingMethod=crop);
+    }
+
+#logo_black{
+    display:            none;
+    background-image:   url(../images/logo_black.gif);
+    }
+
+
+
+/* 'NEED IMMEDIATE HELP?' LINK */
+#immediate_help{
+    display:            block;
+    position:           absolute;
+    top:                -70px;
+    right:              0;
+    width:              211px;
+    height:             70px;
+    border-left:        1px solid #000;
+    text-indent:        -138px;
+    font-size:          12px;
+    line-height:        68px;
+    }
+#immediate_help:hover{
+    text-decoration:    none;
+    }
+
+#immediate_help address{
+    position:           absolute;
+    top:                13px;
+    right:              10px;
+    width:              191px;
+    height:             50px;
+    background-image:   url(../images/contact_john_ullman.png);
+    _background-image:  none;
+    filter:             progid:DXImageTransform.Microsoft.AlphaImageLoader(src=../images/contact_john_ullman.png,sizingMethod=crop);
+    overflow:           hidden;
+    text-indent:        -9999px;
+    }
+
+
+
+/* NAVIGATION */
+nav ul{
+    position:           absolute;
+    top:                238px;
+    left:               -360px;
+    margin:             0;
+    padding:            0;
+    width:              360px;
+    height:             32px;
+    border-bottom:      1px solid #000;
+    list-style:         none;
+    font-size:0;
+    }
+
+nav li{
+    display:            inline;
+    margin:             0;
+    padding:            0;
+    }
+
+nav a{
+    display:            block;
+    position:           absolute;
+    top:                0;
+    height:             32px;cursor:pointer;
+    }
+
+nav a.active,
+body.animated nav a{
+    cursor:             default;
+    }
+
+nav img{
+    opacity:            0;
+    filter:             alpha(opacity=0);
+    }
+
+nav a.active img{
+    opacity:            1;
+    filter:             none;
+    }
+
+#overview_link{
+    left:               14px;
+    width:              61px;
+    background-image:   url(../images/nav_links/home.png);
+    _background-image:  none;
+    filter:             progid:DXImageTransform.Microsoft.AlphaImageLoader(src=../images/nav_links/home.png,sizingMethod=crop);
+    }
+#benefits_link{
+    left:               75px;
+    width:              77px;
+    background-image:   url(../images/nav_links/benefits.png);
+    _background-image:  none;
+    filter:             progid:DXImageTransform.Microsoft.AlphaImageLoader(src=../images/nav_links/benefits.png,sizingMethod=crop);
+    }
+#testimonials_link{
+    left:               152px;
+    width:              110px;
+    background-image:   url(../images/nav_links/testimonials.png);
+    _background-image:  none;
+    filter:             progid:DXImageTransform.Microsoft.AlphaImageLoader(src=../images/nav_links/testimonials.png,sizingMethod=crop);
+    }
+#contact_us_link{
+    left:               262px;
+    width:              98px;
+    background-image:   url(../images/nav_links/contact_us.png);
+    _background-image:  none;
+    filter:             progid:DXImageTransform.Microsoft.AlphaImageLoader(src=../images/nav_links/contact_us.png,sizingMethod=crop);
+    }
+
+
+
+/* STYLING SHARED BY ALL 4 SECTIONS */
+section{
+    position:           absolute;
+    top:                0;
+    left:               0;
+    }
+
+section .content{
+    display:            none;
+    position:           absolute;
+    top:                210px;
+    left:               385px;
+    width:              480px;
+    }
+
+section h1{
+    margin:             0;
+    font-size:          18px;
+    line-height:        20px;
+    }
+
+.spotlight{
+    position:           absolute;
+    opacity:            0;
+    filter:             alpha(opacity=0);
+    overflow:           hidden;
+    background-color:   #FFF;
+    background-repeat:  no-repeat;
+    background-attachment:fixed;
+    text-indent:        -9999px;
+    }
+
+
+
+/* OVERVIEW SECTION */
+#overview{
+    color:              #FFF;
+    }
+
+#overview .spotlight{
+    top:                210px;
+    left:               385px;
+    width:              491px;
+    height:             75px;
+    background-image:   url(../images/banners/overview.png);
+    }
+
+#overview h1{
+    margin-top:         100px;
+    }
+
+
+
+/* BENEFITS SECTION */
+#benefits{
+    color:              #FFF;
+    }
+
+#benefits .spotlight{
+    top:                385px;
+    left:               185px;
+    width:              651px;
+    height:             58px;
+    background-image:   url(../images/banners/benefits.png);
+    }
+
+#benefits p{
+    margin-right:       75px;
+    }
+
+#benefits ul{
+    margin-top:         110px;
+    margin-right:       75px;
+    padding-left:       18px;
+    list-style-image:   url(../images/chevron.gif);
+    }
+
+#benefits li{
+    margin-bottom:      5px;
+    }
+
+
+
+/* TESTIMONIALS SECTION */
+#testimonials{
+    color:              #FFF;
+    }
+
+#testimonials .spotlight{
+    top:                145px;
+    left:               385px;
+    width:              429px;
+    height:             79px;
+    background-image:   url(../images/banners/testimonials.png);
+    }
+
+#testimonials h1{
+    margin-top:         34px;
+    }
+
+#testimonial_chooser{
+    display:            none;
+    position:           relative;
+    top:                20px;
+    left:               -345px;
+    width:              841px;
+    height:             261px;
+    background-image:   url(../images/testimonial_box.png);
+    }
+
+#testimonial_chooser ul{
+    position:           absolute;
+    top:                72px;
+    left:               345px;
+    margin:             0;
+    padding:            0;
+    width:              418px;
+    height:             128px;
+    overflow:           auto;
+    font-size:          0;
+    }
+
+#testimonial_chooser li{
+    display:            block;
+    float:              left;
+    margin:             0;
+    padding:            0;
+    font-size:          0;
+    }
+
+#testimonial_chooser img{
+    margin:             0 3px 3px 0;
+    border:             2px solid #FFF;
+    vertical-align:     bottom;
+    font-size:          0;
+    }
+
+#testimonials div a.active img,
+#testimonials div a:hover img{
+    border-color:       #EF632E;
+    }
+
+#testimonial_chooser h3{
+    margin:             0 0 3px 345px;
+    padding-top:        18px;
+    font-size:          14px;
+    }
+
+#testimonial_chooser p{
+    margin:             0 0 0 345px;
+    font-size:          12px;
+    line-height:        15px;
+    }
+
+#video_player{
+    position:           absolute;
+    top:                21px;
+    left:               102px;
+    }
+
+
+
+/* CONTACT US SECTION */
+#contact_us{
+    color:              #000;
+    }
+
+#contact_us .spotlight{
+    top:                291px;
+    left:               41px;
+    width:              289px;
+    height:             106px;
+    background-image:   url(../images/banners/contact_us.png);
+    }
+
+#contact_us h1{
+    margin-top:         5px;
+    }
+
+#contact_us p{
+    margin-right:       40px;
+    }
+
+
+#contact_form{
+    width:              272px;
+    font-size:          12px;
+    }
+
+#contact_required_note,
+#contact_error,
+#contact_message{
+    padding:            6px 8px 5px;
+    width:              100%;
+    font-weight:        bold;
+    }
+
+#contact_required_note{
+    text-align:         right;
+    }
+
+#contact_error,
+#contact_message{
+    display:            none;
+    margin-bottom:      3px;
+    background-color:   #000;
+    line-height:        14px;
+    font-style:         italic;
+    }
+
+#contact_error{
+    color:              #E00;
+    font-weight:        bold;
+    }
+
+#contact_message{
+    color:              #FFF;
+    }
+
+#contact_form ol{
+    margin:             0;
+    padding:            0;
+    list-style:         none;
+    }
+
+#contact_form li{
+    clear:              left;
+    margin:             0;
+    padding:            3px 0 0;
+    list-style:         none;
+    }
+
+#contact_form .text{
+    margin:             0;
+    padding:            0;
+    width:              100%;
+    border:             8px solid #FFF;
+    border-bottom-width:5px;
+    background-color:   #FFF;
+    vertical-align:     bottom;
+    font-family:        Helvetica, Arial, sans-serif;
+    font-size:          12px;
+    line-height:        14px;
+    }
+
+#contact_form .required label{
+    display:            none;
+    }
+
+#contact_form .required .text{
+    font-weight:        bold;
+    }
+
+#contact_form #contact_phone_number{
+    float:              left;
+    margin-right:       3px;
+    width:              184px;
+    }
+
+#contact_form #contact_phone_extension{
+    margin-right:       -69px;
+    width:              69px;
+    float:              left;
+    }
+
+#contact_form textarea{
+    margin-top:         8px;
+    resize:             none;
+    }
+
+#contact_form #contact_address{
+    height:             66px;
+    }
+
+#contact_form #contact_comments{
+    margin-top:         3px;
+    height:             44px;
+    }
+
+#contact_form .radio,
+#contact_form .checkbox{
+    margin-left:        6px;
+    }
+
+#contact_form #contact_we_own_or_rent,
+#contact_form #contact_buyback_program{
+    margin-top:         7px;
+    }
+
+#submit_button{
+    margin:             8px -16px 0 0;
+    float:              right;
+    }
+
+#contact_iframe{
+    margin:             0;
+    padding:            0;
+    width:              0;
+    height:             0;
+    border:             0;
+    }
+
+
+
+/* FOOTER */
+footer{
+    position:           absolute;
+    top:                980px;
+    left:               0;
+    padding:            10px 2px 10px 12px;
+    _padding-bottom:    4px;
+    opacity:            0;
+    filter:             alpha(opacity=0);
+    border-top:         1px solid #000;
+    }
+
+footer p{
+    margin:             2px 0;
+    font-size:          9px;
+    }
