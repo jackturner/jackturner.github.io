@@ -69,11 +69,11 @@ p + p {
 		color: 							#BBB;
 		}
 
-@media (max-width: 740px) {
+/*@media (max-width: 740px) {
     #content {
     margin: 40px 20px;
     }
     #cords {
     display: none;
     }
-}
+}*/
