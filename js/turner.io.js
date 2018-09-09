@@ -32,7 +32,7 @@ $(function() {
 			if ( has_drawn_cords )
 				$cords.eq(i).attr({"d": path_str})
 			else
-			  $cords[0].innerHTML += '<path d="'+path_str+'" stroke="#666" fill="transparent"/>'
+			  $cords[0].innerHTML += '<path d="'+path_str+'" stroke="#000" fill="transparent"/>'
 		})
 
 		if ( !has_drawn_cords ) {

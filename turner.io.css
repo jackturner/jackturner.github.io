@@ -11,8 +11,8 @@ html {
 body {
     font-family:        'Helvetica Neue', Helvetica, arial, sans-serif;
     font-style:         normal;
-    font-weight:        300;
     font-size:          16px;
+    background:					linear-gradient(to top, #1fa2ff, #12d8fa, #a6ffcb);
     }
 
 a { 
@@ -63,10 +63,11 @@ p + p {
 
 #events .event h2 {
 		font-size:					20px;
+		font-weight:  			normal;
 		}
 
 #events .event time {
-		color: 							#BBB;
+		font-weight:				bold;
 		}
 
 /*@media (max-width: 740px) {
