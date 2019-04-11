@@ -81,6 +81,8 @@ p+p {
 
 #note {
 	position: fixed;
+	left: 0;
+	right: 0;
 	bottom: 0;
 	background: #ea1f6e;
 	color: #fff;
