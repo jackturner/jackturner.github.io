@@ -52,7 +52,7 @@ $(function() {
 			var $event = $events.eq(i),
 				$cord = $cords.eq(i),
 				y1 = timeline_height + (timeline_top - $(this).position().top),
-				y2 = $event.offset().top - scrollTop + 12,
+				y2 = $event.offset().top - scrollTop + 17,
 				path_str = 'M0 ' + y1 + ' C ' + handle_distance + ' ' + y1 + ', ' + (cord_width - handle_distance) + ' ' + y2 + ', ' + cord_width + ' ' + y2
 
 			if ( isElementInViewport( $event ) )
