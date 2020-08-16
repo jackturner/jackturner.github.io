@@ -1,0 +1,5 @@
+# for fi$h
+[[redirects]]
+  from = "/love.love"
+  to = "/love.txt"
+  status = 200
