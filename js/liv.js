@@ -28,8 +28,7 @@ $(function() {
 		now = moment().unix(),
 		timespan = now - born,
 		has_drawn_cords = false,
-		$cords,
-		cord_width = $cords.width(),
+		cord_width = $("#cords").width(),
 		handle_distance = cord_width / 2
 
 	$events.each(function() {
@@ -42,6 +41,11 @@ $(function() {
 
 	var draw_lines = function() {
 
+		// $cords = $cords.find("path")
+
+		cord_width = $("#cords").width()
+		handle_distance = cord_width / 2
+		console.log({cord_width})
 
 		var scrollTop = $(window).scrollTop(),
 			timeline_top = $timeline.position().top,
